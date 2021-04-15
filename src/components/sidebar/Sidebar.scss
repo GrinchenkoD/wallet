@@ -1,5 +1,5 @@
 .sidebarContainer {
-  position: absolute;
+  position: relative;
   height: 100vh;
   background-color: #fff;
   z-index: 1;
@@ -32,6 +32,7 @@
   align-items: center;
   fill: #242446;
   padding: 10px 16px 10px 30px;
+  border-right: 2px solid transparent;
 }
 .sidebarLinkActive {
   fill: #0364ff;

@@ -2,9 +2,9 @@ import React from 'react'
 
 const Withdrawals = () => {
     return (
-        <div>
-            
-        </div>
+            <>
+            <h2 className="pageTitle">WITHDRAWALS</h2>
+        </>
     )
 }
 

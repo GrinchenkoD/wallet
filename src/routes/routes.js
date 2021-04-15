@@ -1,49 +1,32 @@
-import { lazy } from 'react';
+import Dashboard from '../pages/dashboard/Dashboard';
+import Deposits from '../pages/deposits/Deposits';
+import History from '../pages/history/History';
+import Withdrawals from '../pages/withdrawals/Withdrawals';
 
 const mainRoutes = [
   {
     name: 'Account Dashboard',
     icon: 'dashboard',
     path: '/dashboard',
-    exact: true,
-    component: lazy(() =>
-      import(
-        '../pages/dashboard/Dashboard' /*webpackChunkName: "dashboard-page" */
-      ),
-    ),
+    component: Dashboard,
   },
   {
     name: 'Account History',
     icon: 'history',
     path: '/history',
-    exact: true,
-    component: lazy(() =>
-      import('../pages/history/History' /*webpackChunkName: "history-page" */),
-    ),
+    component: History,
   },
   {
     name: 'Deposits',
     icon: 'deposits',
     path: '/deposits',
-    exact: true,
-    component: lazy(() =>
-      import(
-        '../pages/deposits/Deposits' /*webpackChunkName: "deposits-page" */
-      ),
-    ),
-    private: true,
-    restricted: false,
+    component: Deposits,
   },
   {
     name: 'Withdrawals',
     icon: 'withdrawals',
     path: '/withdrawals',
-    exact: true,
-    component: lazy(() =>
-      import(
-        '../pages/withdrawals/Withdrawals' /*webpackChunkName: "withdrawals-page" */
-      ),
-    ),
+    component: Withdrawals,
   },
 ];
 export default mainRoutes;
