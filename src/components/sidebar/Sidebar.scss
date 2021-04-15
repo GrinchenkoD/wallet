@@ -1,0 +1,48 @@
+.sidebarContainer {
+  position: absolute;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.sidebarControls {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #0364ff;
+  height: 60px;
+  padding: 0 16px 0 33px;
+}
+.sidebarOpenButton {
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+.sidebarControlsIcon {
+  width: 24px;
+  height: 24px;
+}
+
+.navigation {
+  padding-top: 53px;
+}
+
+.sidebarLink {
+  display: flex;
+  align-items: center;
+  fill: #242446;
+  padding: 10px 16px 10px 30px;
+}
+.sidebarLinkActive {
+  fill: #0364ff;
+  background-color: #e9edfe;
+  border-right: 2px solid #0364ff;
+  color: #0364ff;
+}
+.linkName {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.19;
+  padding-right: 9px;
+  margin-left: 8px;
+}

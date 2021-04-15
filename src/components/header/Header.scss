@@ -1,0 +1,45 @@
+.pageHeader {
+  display: flex;
+  justify-content: flex-end;
+  position: fixed;
+  width: 100vw;
+
+  background-color: #242446;
+  padding: 18px 45px 18px 0;
+}
+.dropdownBtn {
+  display: flex;
+  align-items: center;
+
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+.dropdownIcon {
+  width: 24px;
+  height: 24px;
+  fill: #fff;
+}
+
+.userName {
+  font-family: inherit;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.14;
+  color: #ffffff;
+}
+.userNav {
+  position: absolute;
+  top: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 130px;
+}
+.userNavItem {
+  cursor: pointer;
+  padding: 13px 14px;
+}
+.userNavItem:hover {
+  background-color: #e9edfe;
+  color: #0364ff;
+}
