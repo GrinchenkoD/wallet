@@ -104,12 +104,11 @@ const Deposits = () => {
                         <td className="tableData">Lorem ipsum dolor </td>
                         <td className="tableData">$100</td>
                         </tr>
-                    </tbody>
-                    <tfoot className="tableFooter">
-                        <tr>
-                            <td colSpan="3">
+
+                        <tr className="tableLastrow">
+                            <td colSpan="3" align="right">
                                 <button type="button" className="tableFooterBtn">
-                            <svg className="tfootIcon">
+                            <svg className="tfootIconLeft tfootIcon">
                                 <use href={sprite + "#arrowLeft"} />
                                 </svg>
                                     <span className="tfootText">Prev</span>
@@ -117,7 +116,7 @@ const Deposits = () => {
                                  <button type="button" className="tableFooterBtn">
                                 <span className="tfootText">Next</span>
                                 
-                            <svg className="tfootIcon">
+                            <svg className="tfootIconRight tfootIcon">
                                 <use href={sprite + "#arrowRight"} />
                                     </svg>
                                 </button>
@@ -126,8 +125,8 @@ const Deposits = () => {
                                     </button>
                             </td>
                     </tr>
-                    </tfoot>
-  
+                    </tbody>
+                
                 </table>
 
             </div>
